@@ -2,7 +2,7 @@
 Author :
 - https://github.com/crash-override404
 */
-var liffId = "1654604982-8Wmv6gqB";
+var liffId = "1654728399-v0lbwLzG";
 var params = location.search.substring(1);
 var url = window.location.href;
 if (params) {
@@ -76,7 +76,7 @@ function initApp() {
         liff.getProfile().then(profile => {
             const userDisplayName = profile.displayName;
             console.info("User name is", userDisplayName);
-            document.getElementById("greet").innerHTML = "Hi, " + userDisplayName + " ౼ Nice to meet you";
+            document.getElementById("greet").innerHTML = "Hi, " + userDisplayName + " ౼ Selamat datang";
         }).catch((err) => {
             console.error("LIFF getProfile failed", err);
         });
@@ -333,7 +333,7 @@ function sendLiffMessage() {
         console.error("Error while get profile", err);
     });
     if (type == "profile") {
-        sendMessages([{type: "flex", altText: "Profile " + userDisplayName, contents: {type: "bubble", hero: {type: "image", url: userPictureUrl, size: "full", aspectRatio: "1:1", aspectMode: "cover", action: {type: "uri", uri: "line://app/1654604982-8Wmv6gqB?auto=yes&type=image&downloadUrl=" + userPictureUrl + "&previewUrl=" + userPictureUrl } }, body: {type: "box", layout: "vertical", contents: [{type: "text", text: userDisplayName, align: "center", weight: "bold", size: "xl"}, {type: "box", layout: "vertical", margin: "lg", spacing: "sm", contents: [{type: "text", text: userStatusMessage, wrap: true, color: "#666666", size: "sm", maxLines: 5, flex: 5 }] } ] }, footer: {type: "box", layout: "horizontal", spacing: "sm", contents: [{type: "button", style: "primary", height: "sm", color: "#02afff", action: {type: "uri", label: "Creator Caem", uri: "https://line.me/ti/p/~sujarcaem2"}}, {type: "button", style: "primary", height: "sm", action: {type: "uri", label: "Profile", uri: "line://app/1654604982-8Wmv6gqB?auto=yes&type=profile"}}, {type: "spacer", size: "sm"}]}}}]); 
+        sendMessages([{type: "flex", altText: "Profile " + userDisplayName, contents: {type: "bubble", hero: {type: "image", url: userPictureUrl, size: "full", aspectRatio: "1:1", aspectMode: "cover", action: {type: "uri", uri: "https://app/1654728399-v0lbwLzG?auto=yes&type=image&downloadUrl=" + userPictureUrl + "&previewUrl=" + userPictureUrl } }, body: {type: "box", layout: "vertical", contents: [{type: "text", text: userDisplayName, align: "center", weight: "bold", size: "xl"}, {type: "box", layout: "vertical", margin: "lg", spacing: "sm", contents: [{type: "text", text: userStatusMessage, wrap: true, color: "#666666", size: "sm", maxLines: 5, flex: 5 }] } ] }, footer: {type: "box", layout: "horizontal", spacing: "sm", contents: [{type: "button", style: "primary", height: "sm", color: "#02afff", action: {type: "uri", label: "Creator Caem", uri: "https://line.me/ti/p/~ups23"}}, {type: "button", style: "primary", height: "sm", action: {type: "uri", label: "Profile", uri: "https://app/1654728399-v0lbwLzG?auto=yes&type=profile"}}, {type: "spacer", size: "sm"}]}}}]); 
     } else if (type == "text") {
         sendMessages([{
             type: "text",
