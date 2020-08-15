@@ -15,7 +15,7 @@ table {
 }
 
 #profilepicturediv {
-    text-align: center;
+    text-align: start;
 }
 
 img { 
@@ -37,7 +37,7 @@ img {
 }
 
 .buttongroup{
-    text-align: center;
+    text-align: start;
 }
 
 button {
