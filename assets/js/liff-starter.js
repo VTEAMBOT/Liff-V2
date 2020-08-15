@@ -285,7 +285,7 @@ function sendLiffMessage() {
                                     type: "text",
                                     text: profile.statusMessage,
                                     wrap: true,
-                                    color: "#666666",
+                                    color: "#ffff00",
                                     size: "sm",
                                     flex: 5
                                 }]
@@ -300,7 +300,7 @@ function sendLiffMessage() {
                                 type: "button",
                                 style: "primary",
                                 height: "sm",
-                                color: "#02afff",
+                                color: "#00ff00",
                                 action: {
                                     type: "uri",
                                     label: "Square",
