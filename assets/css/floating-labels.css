@@ -50,30 +50,30 @@ body {
   width: 100%;
   margin-bottom: 0; /* Override default `<label>` margin */
   line-height: 1.5;
-  color: #ffff00;
+  color: #ff0000;
   border: 1px solid transparent;
   border-radius: .25rem;
   transition: all .1s ease-in-out;
 }
 
 .form-label-group input::-webkit-input-placeholder {
-  color: #00ff00;
+  color: transparent;
 }
 
 .form-label-group input:-ms-input-placeholder {
-  color: #00ff00;
+  color: transparent;
 }
 
 .form-label-group input::-ms-input-placeholder {
-  color: #00ff00;
+  color: transparent;
 }
 
 .form-label-group input::-moz-placeholder {
-  color: #00ff00;
+  color: transparent;
 }
 
 .form-label-group input::placeholder {
-  color: #00ff00;
+  color: transparent;
 }
 
 .form-label-group input:not(:placeholder-shown) {
