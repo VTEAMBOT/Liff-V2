@@ -8,26 +8,14 @@ body {
   height: 100%;
   margin: 0; 
   padding: 0;
-  background: url(image.jpg);
+  background: url(belajarbersama.jpg);
 }
 
-body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #00ffff;
-  background: url(belajarbersama.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
+body{
+	background: url(belajarbersama.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .form-signin {
